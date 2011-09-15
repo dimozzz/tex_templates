@@ -163,7 +163,11 @@
 	\noindent\fbox{\bf {#1} \arabic{curtask}.}
 }{
 	\addtocounter{curtask}{1}
-	%\vspace{1cm}
+}
+
+\newenvironment{ptask}[2][ML]{
+	\noindent\fbox{\bf {#1} {#2}.}
+}{
 }
 
 \newcommand{\mytitle}[2][Задание]{
