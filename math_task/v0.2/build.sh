@@ -1,9 +1,9 @@
 mkdir tmp
 touch tmp/number.txt
 echo "\setcounter{curtask}{1}" > tmp/number.txt
-cp main.tex series
 cd series
 for i in *.tex; do
+	cp ../main.tex .
 	if [ "$i" != 'main.tex' ]; then
 		sed -i -- "s/curseries/"$i"/g" main.tex
 		cat "../tmp/number.txt"
