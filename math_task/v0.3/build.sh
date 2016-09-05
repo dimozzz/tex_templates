@@ -1,3 +1,5 @@
+#!/bin/bash
+
 IFS=$'\n'
 file=curseries.tex
 mkdir tmp
