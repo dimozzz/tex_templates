@@ -1,8 +1,9 @@
-mkdir tmp
-pdflatex --output-directory tmp main.tex
-cp main.bib tmp
-cd tmp
-bibtex main
+dir=pdf
+mkdir $dir
+pdflatex --output-directory $dir main.tex
+cp main.bib $dir
+cd $dir
+biber main
 cd ..
-pdflatex --output-directory tmp main.tex
-pdflatex --output-directory tmp main.tex
+pdflatex --output-directory $dir main.tex
+pdflatex --output-directory $dir main.tex
